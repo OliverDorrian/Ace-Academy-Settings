@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+div, h1, h2, h3, h4, h5, h6, p, span, img, hr{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f2f2f2;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+#topBar{
+    top: 0;
+    color: black;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    width: 100%;
+}
+
+#topBarLeft{
+    width: 20%;
+    margin-right: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#topBarTitle{
+    text-align: center;
+}
+
+#topBarTitle p{
+    font-size: 1.5em;
+}
+
+#topBarRight{
+    font-size: 1.3em;
+    margin-left: 40%;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+}
+
+#topBarLinks{
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    align-content: space-between;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.topBarLinksText{
+    margin-right: 5%;
+    margin-bottom: 1%;
+}
+
+
+.activeLink{
+    color: salmon;
+    cursor: pointer;
+}
+
+#sideBar{
+    color: black;
+    position: static;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    
+}
+
+#sideBarLogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 10vh;
+    width: 15vw;
+    margin-right: 15%;
+    font-size: 2em;
+}
+
+
+.course{
+    margin-left: 5%;
+
+}
+
+.courseVis:hover p{
+    color: var(--skinRed);
+    display: inline;
+}
+
+.courseText{
+
+    display: inline;
+}
+
+.courseVis{
+    cursor: pointer;
+}
+
+.course:hover .courseDropDown {
+    cursor: pointer;
+    visibility: visible;
+    position: relative;
+}
+
+.mainContent{
+    position: relative;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    width: 85%;
+    background-color: white;
+    box-shadow: 10px 10px black;
+    border-radius: 10px;
+}
+
+.blob {
+    background-image: url("assets/blob.svg");
+    background-size: cover;
+    border: 1px solid black;
+    border-radius: 10px 10px 0 0;
+}
+
+.titleBit {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    color:white;
+    height: 11vh;
+    width: 100%;
+    font-size: 2em;
+}
+
+.titleBit p{
+    margin-left: 2vw;
+}
+
+.main{
+    width: 100%;
+    height: 70vh;
+    border: 1px solid black;
+    border-radius: 0 0 10px 10px;
+}
+
+#courses{
+    visibility: hidden;
+    position: absolute;
+}
+
+#password{
+    visibility: hidden;
+    position: absolute;
+}
+
+#bugs{
+    visibility: hidden;
+    position: absolute;
+}
